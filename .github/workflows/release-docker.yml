@@ -45,6 +45,11 @@ jobs:
           cd ../../
           pwd
           ls -al
+      - name: Verify README file location
+        run: |
+          echo "Check README in /home/runner/work/generator:"
+          ls -al /home/runner/work/generator
+
       - name: Build Image
         uses: docker/build-push-action@v4
         with:
