@@ -48,7 +48,12 @@ jobs:
           cache-from: type=gha
           cache-to: type=gha
       - name: Run pwd
-        run: pwd
+        run: |
+          pwd
+          cd ../
+          pwd
+          cd ../
+          pwd
       - name: Update Docker Hub Readme
         uses: meeDamian/sync-readme@v1.0.6
         with:
