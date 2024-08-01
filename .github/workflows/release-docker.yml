@@ -60,5 +60,5 @@ jobs:
            user: ayush706020
            pass: dockerayushnau
            slug: asyncapi/generator
-           readme: ../../README.md
+           readme: ../README.md
            description: Use your AsyncAPI definition to generate literally anything. Markdown documentation, Node.js code, HTML documentation, anything!
