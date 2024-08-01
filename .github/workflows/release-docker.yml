@@ -49,15 +49,17 @@ jobs:
           cache-to: type=gha
       - name: Run pwd
         run: |
+          echo "Initial directory:"
           pwd
-          ls -lh
+          ls -al
+          echo "Change to parent directory:"
           cd ../
-          ls -lh
           pwd
-          ls -lh
-          cd ../
-          ls -lh
+          ls -al
+          echo "Change to grandparent directory:"
+          cd ../../
           pwd
+          ls -al
       - name: Update Docker Hub Readme
         uses: meeDamian/sync-readme@v1.0.6
         with:
