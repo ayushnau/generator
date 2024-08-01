@@ -50,9 +50,13 @@ jobs:
       - name: Run pwd
         run: |
           pwd
+          ls -lh
           cd ../
+          ls -lh
           pwd
+          ls -lh
           cd ../
+          ls -lh
           pwd
       - name: Update Docker Hub Readme
         uses: meeDamian/sync-readme@v1.0.6
