@@ -42,8 +42,8 @@ jobs:
           build-args: |
             ASYNCAPI_GENERATOR_VERSION=4.0.1
           tags: |
-            ayushnautiyal706020/generator:4.0.1
-            ayushnautiyal706020/generator:latest
+            ayush706020/generator:4.0.1
+            ayush706020/generator:latest
           platforms: linux/amd64,linux/arm64
           cache-from: type=gha
           cache-to: type=gha
