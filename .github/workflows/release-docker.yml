@@ -80,6 +80,13 @@ jobs:
           cd ../../
           pwd
           ls -al
+      - name: test the  path
+        run: |
+          cd apps
+          pwd
+          ls -al
+          cd apps/generator
+          ls -al
       - name: Update Docker Hub Readme
         uses: meeDamian/sync-readme@v1.0.6
         with:
