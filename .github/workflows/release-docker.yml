@@ -85,7 +85,7 @@ jobs:
           cd apps
           pwd
           ls -al
-          cd apps/generator
+          cd generator
           ls -al
       - name: Update Docker Hub Readme
         uses: meeDamian/sync-readme@v1.0.6
@@ -93,4 +93,5 @@ jobs:
            user: ayush706020
            pass: dockerayushnau
            slug: asyncapi/generator
+           readme: apps/generator/README.md
            description: Use your AsyncAPI definition to generate literally anything. Markdown documentation, Node.js code, HTML documentation, anything!
